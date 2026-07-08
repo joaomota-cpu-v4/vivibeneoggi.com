@@ -1823,7 +1823,11 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/EwwV6zzkual0.com\/wp-admi
 document.addEventListener('click', function(event) {
 	var checkoutLink = event.target.closest('a[href*="pay.hotmart.com/G106653505I"]');
 	if (checkoutLink && typeof fbq === 'function') {
-		fbq('trackCustom', 'checkout');
+		fbq('track', 'InitiateCheckout', {
+			value: 14.90,
+			currency: 'EUR',
+			content_name: '500 Ricette Zero Zucchero e Glutine it'
+		});
 	}
 });
 </script>
